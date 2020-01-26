@@ -24,8 +24,7 @@ const Description = () => {
                             <a href="http://concordeauriga.org.in/">KR Puram</a> <br/> <br/> Indeed, even the district has a decent assortment of human services offices in its region.
                              Columbia Asia Hospital, Chinmaya Mission Hospital, Specialist Hospital, Svastha Hospital, Chaya Super Speciality Hospital, VIMS Hospital, Marathahali,
                               Aayug Multi Speciality Hospital, Janapriya Hospital, MGA Hospital, Hope Hospital, Medihope Super Specialty Hospital Pvt Ltd, Patil Hospital, 
-                    Sri Ram emergency clinic are a portion of the couple of set up names in restorative consideration division here. RERA Number: PRM/KA/RERA/1251/446/PR/190704/002647.
-                    </div>
+                    Sri Ram emergency clinic are a portion of the couple of set up names in restorative consideration division here.                    </div>
     );
 };
 
