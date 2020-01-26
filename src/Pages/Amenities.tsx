@@ -1,4 +1,5 @@
 import React,{useEffect} from 'react';
+import ReactDOM from 'react-dom';
 import AmenitiesContent from '../Components/Amenities';
 import Location from '../Components/Location';
 import Title from '../Components/Title';

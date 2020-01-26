@@ -10,9 +10,10 @@ import OverviewPage from './Pages/Overview';
 import ConfigurationPage from './Pages/Configuration';
 import GalleryPage from './Pages/Gallery';
 import CostingPage from './Pages/Costing';
-import AmenitiesPage from './Pages/Amenities';
+import Amenities from './Pages/Amenities';
 import LocationPage from './Pages/Location'; 
 import ErrorPage from './Pages/Error';
+
 
 
 const App = () => {
@@ -26,7 +27,7 @@ const App = () => {
              <Route path="/configuration" exact component={ConfigurationPage}/>
              <Route path="/gallery" exact component={GalleryPage}/>
              <Route path="/costing" exact component={CostingPage}/>
-             <Route path="/Amenities" exact component={AmenitiesPage}/>
+             <Route exact path="/Pages/amenities.html" component={Amenities}/>
              <Route path="/location" exact component={LocationPage}/>
              <Route component={ErrorPage}/>
            </Switch>
