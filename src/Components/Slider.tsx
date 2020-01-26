@@ -9,7 +9,7 @@ import FourthSliderImage from '../Images/exterior_new1.jpg';
 const Slider = () => {
     return (
         <div>
-           <AwesomeSlider style={{height:"70vh"}}>
+           <AwesomeSlider style={{height:"75vh"}}>
              <div data-src={FirstSliderImage} />
              <div data-src={SecondSliderImage} />
              <div data-src={ThirdSliderImage} />

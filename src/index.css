@@ -16,7 +16,6 @@
 
 .main_logo{
   flex: 5;
-  padding-left: 25px;
 }
 
 .main_links{
@@ -171,7 +170,7 @@ table td:not([align]), table th:not([align]) {
 }
 
 .main_Form{
-  padding:30px;
+  padding:0px 10px 30px 30px;
 }
 
 .label{
@@ -201,7 +200,7 @@ table td:not([align]), table th:not([align]) {
   width: 100%;
   z-index: 1;
   box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.3);
-    background: white;
+  background: white;
 }
 .nav-header {
   display: flex;
@@ -232,27 +231,40 @@ table td:not([align]), table th:not([align]) {
   cursor: pointer;
 }
 
+.main_logo1{
+  height: 64px;
+  margin: 5px 0px;
+}
+
 
 .show-nav {
   height: 270px;
 }
+@media screen and (min-width: 1024px)
+{
+.navbar {
+    min-height: 3.15rem;
+    height: 78px;
+}
+}
+
 @media screen and (min-width: 768px) {
   .nav-btn {
     display: none;
   }
   .nav-center {
-    max-width: 1170px;
+    max-width: 1300px;
     margin: 0 auto;
     display: flex;
   }
   .nav-links {
     height: auto;
     display: flex;
-    margin-left: 17rem;
+    margin-left: 15rem;
   }
   .nav-links a {
     margin: 0 1.3rem;
-    padding: 29px 0;
+    padding: 22px 0;
   }
 }
 
@@ -345,7 +357,7 @@ table td:not([align]), table th:not([align]) {
   top:70px;
 }
 #iframe{
-  padding-right:30px !important;
+  padding-right:0px !important;
 }
 }
 

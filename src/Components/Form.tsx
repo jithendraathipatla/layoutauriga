@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import Logo from '../Images/logo.png'
 
 const Form = () => {
   const [name, setname] = useState();
@@ -34,8 +35,11 @@ const Form = () => {
 
     return (
       <form onSubmit={handelingFormdata} name="main_forma">
-
-    <div className="main_Form">
+           <div style={{textAlign:"center"}}>
+             <img src={Logo} alt="concorde auriga" width="150px"/>
+           </div>
+    <div>
+      <br/>
   <div className="field">
   <label className="label">Name</label>
   <div className="control">

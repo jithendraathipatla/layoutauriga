@@ -16,7 +16,7 @@ const Home = () => {
      });
     return (
         <div>
-            <div style={{marginTop:"74px"}}>
+            <div style={{marginTop:"-20px"}}>
             <SliderComponent/>
             </div>
             <div className="box">

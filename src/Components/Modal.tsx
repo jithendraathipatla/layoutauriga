@@ -8,8 +8,11 @@ const Modal = (props:any) => {
     return (
         <div>
         <button onClick={() => setisopen(true)} className={props.class}>{props.title}</button>
+       
         <Modalabc open={isopen} onClose={ () => setisopen(false)}>
+        <div style={{padding:"5px 30px 20px 30px"}}> 
           <Form/>
+         </div>
         </Modalabc>
         </div>
     );

@@ -62,43 +62,43 @@
    crossorigin="anonymous"></script>
    <div class="closepopup popup"  >
     <div class="popup-content">
-      <h3 style="font-size: 14px;"> Fill Form to Download Brouchure</h3>
-      <hr style="border-top: 1px solid white; margin:0px !important">
+      <h1 class="label">Fill Form to Download Brouchure</h1>
+      <hr style="border-top: 0.5px solid black; margin:0px !important">
       <p><form action="/popup.php" name="brouchereform" onsubmit="return validateFirstForm()" method="POST"  id="frmdb" >
              <div id="sucess1"></div>               
                 <div class="inputGroup2">
                   <div style="height:8px"></div>
                   <input class="input" type="email" style="color:black" required name="email"   id="email1"/><br>
-                  <label for="email" style="color:white">*Email</label>
+                  <label class="label" for="email">*Email</label>
                 </div>
                 <div class="inputGroup2">
                   <input class="input" type="number" style="color:black"  required name="mobile"  id="mobile1"/><br>
-                  <label for="mobile" style="color:white">*Mobile</label>
+                  <label class="label" for="mobile">*Mobile</label>
                 </div>             
                
-                <button class="button is-primary is-light"  type="submit" name="submit" >Submit</button>
+                <button class="button is-success"  type="submit" name="submit" >Submit</button>
               
               </form> </p>
     </div>  
     <a class="buttonabcd" style="writing-mode: tb-rl;padding-right: 5px;"> Download Brochure</a>
   </div>
   <div class="closepopup popupps">
-    <div class="popup-content" style="height:186px;">
-      <h3 style="font-size: 14px;"> Fill Form to Download Cost Sheet</h3>
-      <hr style="border-top: 1px solid white; margin:0px !important">
+    <div class="popup-content" style="height:210px;">
+      <h3 class="label"> Fill Form to Download Cost Sheet</h3>
+      <hr style="border-top: 0.51px solid black; margin:0px !important">
       <p><form action="/popup.php" onsubmit="return validateFirstForm()" method="POST" class="callRequest" id="frmps" >
              <div id="sucess2"></div>               
                 <div class="inputGroup2">
                   <div style="height:8px"></div>
                   <input class="input" type="email" style="color:black"  required name="email"   id="email2"/><br>
-                  <label for="email" style="color:white">*Email</label>
+                  <label class="label" for="email" >*Email</label>
                 </div>
                 <div class="inputGroup2">
                   <input  class="input" type="number" style="color:black"  required name="mobile"  id="mobile2"/><br>
-                  <label for="mobile" style="color:white">*Mobile</label>
+                  <label class="label" for="mobile">*Mobile</label>
                 </div>             
                 
-                  <button class="button is-primary is-light" name="submit" class="fill-btn text-uppercase" type="submit">submit</button>
+                  <button class="button is-success" name="submit" class="fill-btn text-uppercase" type="submit">submit</button>
                 
               </form> </p>
     </div>  
@@ -113,8 +113,6 @@
         $('.popupps').addClass("closepopup"); 
         e.preventDefault();      
       });
-      
-  
         $('.buttonps').on('click', function(e) {
         $('.popupps').toggleClass("closepopup"); 
         $('.buttonps').toggleClass("button-closed1");
@@ -129,7 +127,7 @@
 .popup{
   left: 0;
   position: fixed;
-  top: 25%;
+  top: 20%;
   transition: left .5s ease;
   z-index:1000;
 }
@@ -143,10 +141,11 @@
 .popup-content {
   background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
   box-sizing: border-box;
-  border-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   color: white;
   float: left;
-  height: 185px;
+  height: 210px;
   padding: 10px;
   width: 275px;
   font-size: 12px;

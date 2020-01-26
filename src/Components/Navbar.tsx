@@ -18,7 +18,7 @@ const [state, setstate] = useState(false);
          <div className="nav-center">
             <div className="nav-header">
                <Link to="/">
-                  <img src={Logo} alt="livexcellence"/>
+                  <img src={Logo} alt="livexcellence" className="main_logo1"/>
                </Link>
             <button type="button" className="nav-btn" onClick={handelToogle}>
               <FaAlignRight className="nav-icon"/>
