@@ -7,7 +7,7 @@ const Location = () => {
         window.scrollTo(0,0);
      });
     return (
-        <div className="box" style={{marginTop:"90px"}}>
+        <div className="box" style={{marginTop:"82px"}}>
            
            <Locationabc/>
            <br/>

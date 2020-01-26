@@ -26,7 +26,6 @@ const Home = () => {
             <hr/>
             <TabelComponent/>
             <hr/>
-            
             <GalleryComponent/>
             <hr/>
 
