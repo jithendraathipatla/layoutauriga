@@ -5,7 +5,7 @@ import Location from '../Components/Location';
 
 const Overview = () => {
     useEffect(() => {
-        document.title="Apartments in Whitefield | Waterford Apartments in Whitefield | Prestige properties";
+        document.title=">Concorde Auriga | Bangalore |Concorde Auriga Review | Old Madras Road | Price";
         window.scrollTo(0,0);
      });
     return (
