@@ -120,11 +120,11 @@ const Gallery = () => {
             <TitleComponent title="Auriga Gallery"/>
             <br/>
             <div  className="galleryImages">
-              <div className="box">
+              <div>
               <Title title="Auriga Interior, Exterior & Masterplan"/>
               <TabContainer title1="Interior" title2="Exterior" title3="Master Plan" interior={<LightHouse images={[interiorone, interiortwo, interiorthree, interiorfourth, interiorfifth, interiorsixth]} state={interior} />} exterior={<LightHouse images={[firstGallery, secondGallery, thirdGallery, fourthGallery, fifthGallery]} state={Exterior} />} masterplan={<LightHouse images={[masterPlanImage]} state={masterPlan} />} towerA={<LightHouse images={[floorOne, floorTwo, floorThree, floorFour, floorFive, floorSix]} state={floorPlan} />}/>
               </div>
-              <div className="box">
+              <div>
               <Title title="Auriga Floor Plans"/>
               <TabContainer title1="Tower A" title2="Tower B" title3="Tower C" interior={<LightHouse images={[floorOne, floorTwo, floorThree, floorFour, floorFive, floorSix]} state={floorPlan} />} exterior={<LightHouse images={[floorOne, floorTwo, floorThree, floorFour, floorFive, floorSix]} state={floorPlan} />} masterplan={<LightHouse images={[floorOne, floorTwo, floorThree, floorFour, floorFive, floorSix]} state={floorPlan} />}/> 
               </div>
