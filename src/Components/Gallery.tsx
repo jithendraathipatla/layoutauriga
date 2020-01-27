@@ -15,14 +15,31 @@ import interiorfourth from '../Images/interior_new7.jpg';
 import interiorfifth from '../Images/interior_new2.jpg';
 import interiorsixth from '../Images/interior_new10.jpg';
 
-import floorOne from '../Images/floorplan1.jpg';
-import floorTwo from '../Images/floorplan2.jpg';
-import floorThree from '../Images/floorplan3.jpg';
-import floorFour from '../Images/floorplan4.jpg';
-import floorFive from '../Images/floorplan5.jpg';
-import floorSix from '../Images/floorplan6.jpg';
+import floorOne from '../Images/gallery/Auriga-towerA-one.jpg';
+import floorTwo from '../Images/gallery/Auriga-towerA-two.jpg';
+import floorThree from '../Images/gallery/Auriga-towerA-three.jpg';
+import floorFour from '../Images/gallery/Auriga-towerA-four.jpg';
+import floorFive from '../Images/gallery/Auriga-towerA-five.jpg';
+import floorSix from '../Images/gallery/Auriga-towerA-six.jpg';
 
-import masterPlanImage from '../Images/master_plan.png';
+
+import BfloorOne from '../Images/gallery/Auriga-towerB-one.jpg';
+import BfloorTwo from '../Images/gallery/Auriga-towerB-two.jpg';
+import BfloorThree from '../Images/gallery/Auriga-towerB-three.jpg';
+import BfloorFour from '../Images/gallery/Auriga-towerB-four.jpg';
+import BfloorFive from '../Images/gallery/Auriga-towerB-five.jpg';
+import BfloorSix from '../Images/gallery/Auriga-towerB-six.jpg';
+
+
+import CfloorOne from '../Images/gallery/Auriga-towerC-one.jpg';
+import CfloorTwo from '../Images/gallery/Auriga-towerC-two.jpg';
+import CfloorThree from '../Images/gallery/Auriga-towerC-three.jpg';
+import CfloorFour from '../Images/gallery/Auriga-towerC-four.jpg';
+import CfloorFive from '../Images/gallery/Auriga-towerC-five.jpg';
+import CfloorSix from '../Images/gallery/Auriga-towerC-six.jpg';
+import CfloorSeven from '../Images/gallery/Auriga-towerc-seven.jpg';
+
+import masterPlanImage from '../Images/gallery/Auriga-master.jpg';
 import Title from '../Components/Title';
 
 
@@ -107,6 +124,67 @@ const Gallery = () => {
     
     ]);
 
+
+    const [BfloorPlan, BsetfloorPlan] = useState([
+      {
+        name:"1151 Sq.ft",
+        image: BfloorOne,
+      },
+      {
+        name:"1361 Sq.ft",
+        image:BfloorTwo,
+      },
+     
+      {
+        name:"1074 Sq.ft",
+        image: BfloorThree,
+      },
+       {
+        name:"1758 Sq.ft",
+        image: BfloorFour,
+      },
+      
+      {
+        name:"1351 Sq.ft",
+        image: BfloorFive,
+      },
+      {
+        name:"1164 Sq.ft",
+        image: BfloorSix,
+      },
+    
+    ]);
+
+    const [CfloorPlan, CsetfloorPlan] = useState([
+      {
+        name:"1151 Sq.ft",
+        image: CfloorOne,
+      },
+      {
+        name:"1361 Sq.ft",
+        image:CfloorTwo,
+      },
+     
+      {
+        name:"1074 Sq.ft",
+        image: CfloorThree,
+      },
+       {
+        name:"1758 Sq.ft",
+        image: CfloorFour,
+      },
+      
+      {
+        name:"1351 Sq.ft",
+        image: CfloorFive,
+      },
+      {
+        name:"1164 Sq.ft",
+        image: CfloorSix,
+      },
+    
+    ]);
+
     const [masterPlan, setmasterPlan] = useState([{
         name:"Master Plan",
         image:masterPlanImage,
@@ -126,7 +204,7 @@ const Gallery = () => {
               </div>
               <div>
               <Title title="Auriga Floor Plans"/>
-              <TabContainer title1="Tower A" title2="Tower B" title3="Tower C" interior={<LightHouse images={[floorOne, floorTwo, floorThree, floorFour, floorFive, floorSix]} state={floorPlan} />} exterior={<LightHouse images={[floorOne, floorTwo, floorThree, floorFour, floorFive, floorSix]} state={floorPlan} />} masterplan={<LightHouse images={[floorOne, floorTwo, floorThree, floorFour, floorFive, floorSix]} state={floorPlan} />}/> 
+              <TabContainer title1="Tower A" title2="Tower B" title3="Tower C" interior={<LightHouse images={[floorOne, floorTwo, floorThree, floorFour, floorFive, floorSix]} state={floorPlan} />} exterior={<LightHouse images={[BfloorOne, BfloorTwo, BfloorThree, BfloorFour, BfloorFive, BfloorSix]} state={BfloorPlan} />} masterplan={<LightHouse images={[CfloorOne, CfloorTwo, CfloorThree, CfloorFour, CfloorFive, CfloorSix, CfloorSeven]} state={floorPlan} />}/> 
               </div>
             </div>
              
