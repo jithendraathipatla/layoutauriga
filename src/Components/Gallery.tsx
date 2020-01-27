@@ -127,29 +127,29 @@ const Gallery = () => {
 
     const [BfloorPlan, BsetfloorPlan] = useState([
       {
-        name:"1151 Sq.ft",
+        name:"833 Sq.ft",
         image: BfloorOne,
       },
       {
-        name:"1361 Sq.ft",
+        name:"1371 Sq.ft",
         image:BfloorTwo,
       },
      
       {
-        name:"1074 Sq.ft",
+        name:"1139 Sq.ft",
         image: BfloorThree,
       },
        {
-        name:"1758 Sq.ft",
+        name:"1097 Sq.ft",
         image: BfloorFour,
       },
       
       {
-        name:"1351 Sq.ft",
+        name:"837 Sq.ft",
         image: BfloorFive,
       },
       {
-        name:"1164 Sq.ft",
+        name:"1344 Sq.ft",
         image: BfloorSix,
       },
     
@@ -157,16 +157,16 @@ const Gallery = () => {
 
     const [CfloorPlan, CsetfloorPlan] = useState([
       {
-        name:"1151 Sq.ft",
+        name:"1344 Sq.ft",
         image: CfloorOne,
       },
       {
-        name:"1361 Sq.ft",
+        name:"1312 Sq.ft",
         image:CfloorTwo,
       },
      
       {
-        name:"1074 Sq.ft",
+        name:"1136 Sq.ft",
         image: CfloorThree,
       },
        {
@@ -175,12 +175,16 @@ const Gallery = () => {
       },
       
       {
-        name:"1351 Sq.ft",
+        name:"1074 Sq.ft",
         image: CfloorFive,
       },
       {
-        name:"1164 Sq.ft",
+        name:"1744 Sq.ft",
         image: CfloorSix,
+      },
+      {
+        name:"1366 Sq.ft",
+        image: CfloorSeven,
       },
     
     ]);
@@ -204,7 +208,7 @@ const Gallery = () => {
               </div>
               <div>
               <Title title="Auriga Floor Plans"/>
-              <TabContainer title1="Tower A" title2="Tower B" title3="Tower C" interior={<LightHouse images={[floorOne, floorTwo, floorThree, floorFour, floorFive, floorSix]} state={floorPlan} />} exterior={<LightHouse images={[BfloorOne, BfloorTwo, BfloorThree, BfloorFour, BfloorFive, BfloorSix]} state={BfloorPlan} />} masterplan={<LightHouse images={[CfloorOne, CfloorTwo, CfloorThree, CfloorFour, CfloorFive, CfloorSix, CfloorSeven]} state={floorPlan} />}/> 
+              <TabContainer title1="Tower A" title2="Tower B" title3="Tower C" interior={<LightHouse images={[floorOne, floorTwo, floorThree, floorFour, floorFive, floorSix]} state={floorPlan} />} exterior={<LightHouse images={[BfloorOne, BfloorTwo, BfloorThree, BfloorFour, BfloorFive, BfloorSix]} state={BfloorPlan} />} masterplan={<LightHouse images={[CfloorOne, CfloorTwo, CfloorThree, CfloorFour, CfloorFive, CfloorSix, CfloorSeven]} state={CfloorPlan} />}/> 
               </div>
             </div>
              
