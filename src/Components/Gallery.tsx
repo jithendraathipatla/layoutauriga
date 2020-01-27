@@ -1,5 +1,6 @@
 import React,{useState} from 'react';
 import TitleComponent from '../Components/Title';
+import TabContainer from '../Components/tabs';
 import LightHouse from '../Components/Lighthouse';
 import firstGallery from '../Images/exterior_new2.jpg';
 import secondGallery from '../Images/exterior_new3.jpg';
@@ -119,36 +120,17 @@ const Gallery = () => {
             <TitleComponent title="Auriga Gallery"/>
             <br/>
             <div  className="galleryImages">
-             <div style={{borderRight:"1px solid #eee", paddingRight:"10px"}} id="border2">
-              <TitleComponent title="Auriga Interior"/>
-            <LightHouse images={[interiorone, interiortwo, interiorthree, interiorfourth, interiorfifth, interiorsixth]} state={interior} />
+              <div className="box">
+              <Title title="Auriga Interior, Exterior & Masterplan"/>
+              <TabContainer title1="Interior" title2="Exterior" title3="Master Plan" interior={<LightHouse images={[interiorone, interiortwo, interiorthree, interiorfourth, interiorfifth, interiorsixth]} state={interior} />} exterior={<LightHouse images={[firstGallery, secondGallery, thirdGallery, fourthGallery, fifthGallery]} state={Exterior} />} masterplan={<LightHouse images={[masterPlanImage]} state={masterPlan} />} towerA={<LightHouse images={[floorOne, floorTwo, floorThree, floorFour, floorFive, floorSix]} state={floorPlan} />}/>
+              </div>
+              <div className="box">
+              <Title title="Auriga Floor Plans"/>
+              <TabContainer title1="Tower A" title2="Tower B" title3="Tower C" interior={<LightHouse images={[floorOne, floorTwo, floorThree, floorFour, floorFive, floorSix]} state={floorPlan} />} exterior={<LightHouse images={[floorOne, floorTwo, floorThree, floorFour, floorFive, floorSix]} state={floorPlan} />} masterplan={<LightHouse images={[floorOne, floorTwo, floorThree, floorFour, floorFive, floorSix]} state={floorPlan} />}/> 
+              </div>
             </div>
-            <div className="galleryInternalClassOne">
-            <div style={{borderRight:"1px solid #eee", paddingRight:"10px"}}  id="border3">
-              <TitleComponent title="Auriga Exterior"/>
-            <LightHouse images={[firstGallery, secondGallery, thirdGallery, fourthGallery, fifthGallery]} state={Exterior} />
+             
             </div>
-            </div>
-            <div >
-              <TitleComponent title="Auriga FloorPlan"/>
-            <LightHouse images={[floorOne, floorTwo, floorThree, floorFour, floorFive, floorSix]} state={floorPlan} />
-            </div>
-           </div>
-
-           <br/>
-
-           <hr/>
-           <TitleComponent title="Auriga MasterPlan"/>
-           <div className="masterplan_main">
-            <div></div>
-            <div>
-            <LightHouse images={[masterPlanImage]} state={masterPlan} />
-            </div>
-            <div></div>
-            
-           </div>
-            </div>
-            <br/>
         </div>
     );
 };
