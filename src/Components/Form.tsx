@@ -56,7 +56,7 @@ const Form = () => {
   </div>
   </div>
   <br/>
-  <button className="tabelbuttonabcde" type="submit" value="submit" name="submit">Submit</button>
+  <button className="tabelbuttonabcde is-link" type="submit" value="submit" name="submit">Submit</button>
   </div>
   </form>
         

@@ -44,7 +44,6 @@ const useStyles = makeStyles((theme: Theme) => ({
 }));
 
 export default function SimpleTabs(props:any) {
-  console.log(props);
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
