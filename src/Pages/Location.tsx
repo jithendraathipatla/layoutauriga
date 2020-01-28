@@ -9,6 +9,7 @@ const Location = () => {
      });
     return (
         <div className="box" style={{marginTop:"82px"}}>
+                      <div style={{textAlign:"justify", padding:"10px 30px"}} className="card">
            <div style={{textAlign:"center"}}>
               <Title title="About Concorde Auriga Location"/>
             </div>
@@ -17,8 +18,8 @@ const Location = () => {
                     
                     Truly you have alternatives like Concorde Auriga condo whereyou can purchase for end utilize or Invest on rentals or resale.
             </h1>
+            </div>
             <br/>
-            <hr/>
            <Locationabc/>
            <br/>
         </div>

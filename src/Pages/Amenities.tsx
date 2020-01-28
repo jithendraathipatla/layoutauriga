@@ -1,5 +1,4 @@
 import React,{useEffect} from 'react';
-import ReactDOM from 'react-dom';
 import AmenitiesContent from '../Components/Amenities';
 import Location from '../Components/Location';
 import Title from '../Components/Title';
@@ -11,10 +10,11 @@ const Amenities = () => {
      });
     return (
         <div className="box" style={{marginTop:"82px"}}>
+          <div style={{textAlign:"justify", padding:"30px"}} className="card">
             <div style={{textAlign:"center"}}>
               <Title title="About Concorde Auriga Amenities"/>
             </div>
-            <h1 style={{textAlign:"justify"}}>
+            <h1>
             Concorde Auriga Specifications and Quality Are An Important Decision Of Assessing The Quality Of A Company.
                      Concorde Auriga Has Many Interweaved Facilities That Render It The Perfect Place To Stay In Luxury.
                       The Services Are Designed Which Allows People To Have More Of Family Time And Commuting To Simple Public Requirements Or Far-Off Areas.
@@ -29,13 +29,15 @@ const Amenities = () => {
                       A Library Was Designed To Fit In The Property And Preserve Your Learning Skills In Order To Plunge Your Head Into The World Of Literature And Information. A Clubhouse Is Set Up To Hold Monthly Or Daily Activities, Cafe To Spend Your Precious Time With Friends And Family, Recreational Facilities, Jogging Path, A Meditation Deck, And Beautifully Manicured Gardens To Give A Peaceful Feel So That People Can Enjoy Living In An Environment Friendly Atmosphere. The Area Is Well-Planned With Indoor Sports Such As TT, Chess, Carom, Air Hockey, And Foosball. The Business Center Is Designed For The Needs And Requirements Of Your Business. 
                     The Entire Enclave Is RCC Designed, To Relieve The Inhabitants From Regular Upkeep Of Maintenance.
             </h1>
+            </div>
             <br/>
-            <hr/>
+        
            <AmenitiesContent/>
            <br/>
            <hr/>
            <Location/>
            <br/>
+        
         </div>
     );
 };

@@ -4,7 +4,7 @@ import TitleForDescription from '../Components/Title';
 
 const Description = () => {
     return (
-        <div style={{textAlign:"justify"}}>
+        <div style={{textAlign:"justify", padding:"10px 30px"}} className="card">
             <div style={{textAlign:"center"}}>
              <TitleForDescription title="About Concorde Auriga"/>
             </div>

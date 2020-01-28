@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import Logo from '../Images/logo.png'
+import Logo from '../Images/logo.png';
+
 
 const Form = () => {
   const [name, setname] = useState();
@@ -20,19 +21,14 @@ const Form = () => {
     const phone = e.target.value;
     setphone(phone);
   }
-
-
-
   const handelingFormdata = (e:any) => {
     e.preventDefault();
     if(phone.length > 10){
       alert('Must enter a Valid Number');
     }
-    console.log(name, email, phone);
-
   }
     return (
-      <form onSubmit={handelingFormdata} name="main_forma" action="./popup.php" method="POST">
+      <form onSubmit={handelingFormdata} name="main_forma" >
           <div style={{textAlign:"center"}}>
             <img src={Logo} alt="concorde auriga" width="150px"/>
           </div>
@@ -60,7 +56,7 @@ const Form = () => {
   </div>
   </div>
   <br/>
-  <button className="tabelbuttonabcde" type="submit" value="submit">Submit</button>
+  <button className="tabelbuttonabcde" type="submit" value="submit" name="submit">Submit</button>
   </div>
   </form>
         

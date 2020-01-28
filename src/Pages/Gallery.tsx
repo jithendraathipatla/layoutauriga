@@ -10,6 +10,7 @@ const Gallery = () => {
      });
     return (
         <div className="box" style={{marginTop:"82px"}}>
+             <div style={{textAlign:"justify", padding:"30px"}} className="card">
              <div style={{textAlign:"center"}}>
               <Title title="About Concorde Auriga Gallery"/>
             </div>
@@ -19,8 +20,9 @@ const Gallery = () => {
                      Individuals Are Urged To Prefer Investing In Developing Sites, Existing Leading Sites. Since Rates Are Marginal In Developing Markets, There Is Room For Development With Regard To Land Value. It Is A Threat To Invest In Developed Areas As The Region Has Reached The Peak. Until Jumping To Conclusions, A Site Visit Before Position Is Necessary. 
                     Welcome To Concorde Auriga Gallery
             </h1>
+            </div>
             <br/>
-            <hr/>
+            
 
             <GalleryComponent/>
             <br/>

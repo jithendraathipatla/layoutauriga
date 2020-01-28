@@ -20,6 +20,7 @@ const Card = (props:any) => {
     },
   }),
 );
+
 const classes = useStyles();
     return (
     <div className={classes.root}>
