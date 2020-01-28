@@ -15,7 +15,7 @@ const Card = (props:any) => {
       '& > *': {
         margin: theme.spacing(1),
         width: theme.spacing(36),
-        height: theme.spacing(20),
+        height: theme.spacing(23),
       },
     },
   }),

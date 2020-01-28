@@ -27,17 +27,15 @@ const Form = () => {
     e.preventDefault();
     if(phone.length > 10){
       alert('Must enter a Valid Number');
-      e.target.reset();
     }
     console.log(name, email, phone);
 
   }
-
     return (
-      <form onSubmit={handelingFormdata} name="main_forma">
-           <div style={{textAlign:"center"}}>
-             <img src={Logo} alt="concorde auriga" width="150px"/>
-           </div>
+      <form onSubmit={handelingFormdata} name="main_forma" action="./popup.php" method="POST">
+          <div style={{textAlign:"center"}}>
+            <img src={Logo} alt="concorde auriga" width="150px"/>
+          </div>
     <div>
       <br/>
   <div className="field">
@@ -62,7 +60,7 @@ const Form = () => {
   </div>
   </div>
   <br/>
-  <button className="tabelbuttonabcde">Submit</button>
+  <button className="tabelbuttonabcde" type="submit" value="submit">Submit</button>
   </div>
   </form>
         

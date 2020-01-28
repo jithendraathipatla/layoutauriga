@@ -10,7 +10,7 @@ const Slider = () => {
     return (
         <div>
            <AwesomeSlider style={{height:"75vh"}}>
-             <div data-src={FirstSliderImage} />
+             <div data-src={FirstSliderImage}/>
              <div data-src={SecondSliderImage} />
              <div data-src={ThirdSliderImage} />
              <div data-src={FourthSliderImage} />
