@@ -364,6 +364,10 @@ table td:not([align]), table th:not([align]) {
     margin: 0px 48px;
     grid-template-columns: 1fr;
 }
+.MuiBox-root-99 {
+  padding: 24px 0px !important;
+}
+
 .pricing .box{
   margin-bottom: 1.5rem !important;
 }
