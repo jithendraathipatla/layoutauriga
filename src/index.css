@@ -358,8 +358,11 @@ table td:not([align]), table th:not([align]) {
  .galleryImages {
   display: block;
  }
- .pricing {
-  display: block;
+  .pricing {
+    display: grid;
+    grid-gap: 10px;
+    margin: 0px 48px;
+    grid-template-columns: 1fr;
 }
 .pricing .box{
   margin-bottom: 1.5rem !important;
@@ -395,32 +398,7 @@ table td:not([align]), table th:not([align]) {
   padding: 0.1em 0.1em !important;
 }
 
-.makeStyles-root-100 > * {
-  width: 361px !important;
-  height: 169px !important;
-  margin: 8px !important;
-}
 
-
-.makeStyles-root-101 > * {
-  width: 361px !important;
-  height: 169px !important;
-  margin: 8px !important;
-}
-
-
-.makeStyles-root-102 > * {
-  width: 361px !important;
-  height: 169px !important;
-  margin: 8px !important;
-}
-
-
-.makeStyles-root-103 > * {
-  width: 361px !important;
-  height: 169px !important;
-  margin: 8px !important;
-}
 
 #border{
   border-right: none !important;
