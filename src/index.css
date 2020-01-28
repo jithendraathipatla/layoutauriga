@@ -116,7 +116,7 @@
 .pricing{
   display:grid;
   grid-template-columns: 3fr 3fr 3fr 3fr;
-  grid-gap: 60px;
+  grid-gap: 30px;
 }
 
 
@@ -360,7 +360,7 @@ table td:not([align]), table th:not([align]) {
   .pricing {
     display: grid;
     grid-gap: 10px;
-    margin: 0px 48px;
+    margin: 0px 10px;
     grid-template-columns: 1fr;
 }
 .MuiBox-root-99 {

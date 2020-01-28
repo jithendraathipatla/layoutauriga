@@ -14,8 +14,8 @@ const Card = (props:any) => {
       flexWrap: 'wrap',
       '& > *': {
         margin: theme.spacing(1),
-        width: theme.spacing(32),
-        height: theme.spacing(23),
+        width: theme.spacing(36),
+        height: theme.spacing(20),
       },
     },
   }),
