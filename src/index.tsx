@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Switch,Route} from 'react-router-dom';
 import './index.css';
 import './App.sass';
 import NavBar from './Components/Navbar';
+import SideMenubar from './Components/sidemenu';
 import Footer from './Components/Footer';
 import HomePage from './Pages/Home';
 import OverviewPage from './Pages/Overview';
@@ -21,6 +22,7 @@ const App = () => {
         <div>
           <Router>
            <NavBar/>
+           <SideMenubar/>
            <Switch>
              <Route path="/" exact component={HomePage}/>
              <Route path="/overview" exact component={OverviewPage}/>

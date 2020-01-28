@@ -5,7 +5,7 @@ import Location from '../Components/Location';
 
 const Overview = () => {
     useEffect(() => {
-        document.title=">Concorde Auriga | Bangalore |Concorde Auriga Review | Old Madras Road | Price";
+        document.title="Concorde Auriga | Bangalore |Concorde Auriga Review | Old Madras Road | Price";
         window.scrollTo(0,0);
      });
     return (

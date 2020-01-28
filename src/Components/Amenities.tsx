@@ -97,7 +97,7 @@ const Amenities = () => {
     const displayingAmenities = () => {
         return state.map((item,i)=>{
             return(
-                <div key={i}>
+                <div key={i} >
                    <img src={item.img} alt={item.name} width="50px"/>
                    <h1>{item.name}</h1>
                 </div>
