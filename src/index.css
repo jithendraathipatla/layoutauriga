@@ -234,8 +234,8 @@ table td:not([align]), table th:not([align]) {
   display: block;
   padding-left: 40px;
   color: #1976d2;
-  font-size: 20px;
-  font-weight: 330;
+  font-size: 21px;
+  font-weight: 380;
   cursor: pointer;
 }
 
