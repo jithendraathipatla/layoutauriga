@@ -1,7 +1,10 @@
 import React,{useState} from 'react';
 import TitleComponent from '../Components/Title';
+import Modal from '../Components/Modal';
 import TabContainer from '../Components/tabs';
 import LightHouse from '../Components/Lighthouse';
+import Lightmodal from '../Components/LighthouseModal';
+
 import firstGallery from '../Images/exterior_new2.jpg';
 import secondGallery from '../Images/exterior_new3.jpg';
 import thirdGallery from '../Images/exterior_new4.jpg';
@@ -208,7 +211,7 @@ const Gallery = () => {
               </div>
               <div>
               <Title title="Auriga Floor Plans"/>
-              <TabContainer title1="Tower A" title2="Tower B" title3="Tower C" interior={<LightHouse images={[floorOne, floorTwo, floorThree, floorFour, floorFive, floorSix]} state={floorPlan} />} exterior={<LightHouse images={[BfloorOne, BfloorTwo, BfloorThree, BfloorFour, BfloorFive, BfloorSix]} state={BfloorPlan} />} masterplan={<LightHouse images={[CfloorOne, CfloorTwo, CfloorThree, CfloorFour, CfloorFive, CfloorSix, CfloorSeven]} state={CfloorPlan} />}/> 
+              <TabContainer title1="Tower A" title2="Tower B" title3="Tower C" interior={<LightHouse images={[floorOne, floorTwo, floorThree, floorFour, floorFive, floorSix]} state={floorPlan} />} exterior={<Lightmodal images={[BfloorOne, BfloorTwo, BfloorThree, BfloorFour, BfloorFive, BfloorSix]} state={BfloorPlan} />} masterplan={<Lightmodal images={[CfloorOne, CfloorTwo, CfloorThree, CfloorFour, CfloorFive, CfloorSix, CfloorSeven]} state={CfloorPlan} />}/> 
               </div>
             </div>
              

@@ -4,7 +4,7 @@ import Form from '../Components/Form';
 
 const Modal = (props:any) => {
     const [isopen, setisopen] = useState(false);
-
+    console.log(isopen);
     return (
         <div>
         <button onClick={() => setisopen(true)} className={props.class}>{props.title}</button>

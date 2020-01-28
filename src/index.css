@@ -243,6 +243,60 @@ table td:not([align]), table th:not([align]) {
 .show-nav {
   height: 270px;
 }
+
+.criticalcss img{
+  position: relative;
+}
+.tabelbutton{
+  padding: 4px;
+  border:1px solid blue;
+  background-color: blue;
+  border-radius: 2px;
+  color:white;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow:0px 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.tabelbuttonabcd{
+  padding: 6px 10px;
+  border:1px solid blue;
+  background-color: blue;
+  border-radius: 2px;
+  color:white;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow:0px 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.tabelbuttonabcde{
+  padding: 6px 20px;
+  border:1px solid blue;
+  background-color: blue;
+  border-radius: 2px;
+  color:white;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow:0px 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.criticalcss button{
+  position: absolute;
+    margin-top: -116px;
+    margin-left: -48px;
+    padding: 10px;
+    border:1px solid blue;
+    background-color: blue;
+    border-radius: 2px;
+    font-weight: 600;
+    color:white;
+    cursor: pointer;
+    box-shadow:0px 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.criticalcss button :hover{
+  transform: translateY(-1px);
+}
+
 @media screen and (min-width: 1024px)
 {
 .navbar {
@@ -277,6 +331,11 @@ table td:not([align]), table th:not([align]) {
     grid-gap: 0px 10px;
     margin-left: 20px;
 }
+
+.MuiBox-root-98 {
+  padding: 24px 0px !important;
+}
+
 .styles_modal__gNwvD {
     top: 0px;
 }
@@ -333,7 +392,34 @@ table td:not([align]), table th:not([align]) {
   padding-bottom: 9px;
 }
 .table.is-narrow td, .table.is-narrow th {
-  padding: 0.1em 0.4em !important;
+  padding: 0.1em 0.1em !important;
+}
+
+.makeStyles-root-100 > * {
+  width: 361px !important;
+  height: 169px !important;
+  margin: 8px !important;
+}
+
+
+.makeStyles-root-101 > * {
+  width: 361px !important;
+  height: 169px !important;
+  margin: 8px !important;
+}
+
+
+.makeStyles-root-102 > * {
+  width: 361px !important;
+  height: 169px !important;
+  margin: 8px !important;
+}
+
+
+.makeStyles-root-103 > * {
+  width: 361px !important;
+  height: 169px !important;
+  margin: 8px !important;
 }
 
 #border{

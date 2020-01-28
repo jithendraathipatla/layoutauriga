@@ -27,23 +27,23 @@ const Tabel = () => {
     <tr>
     <td>1.5 BHk + 1 T</td>
      <td>833 - 837</td>
-     <td><Modal title="Know More" desc="Waterford Pricing"/></td>
+     <td><Modal title="Know more" desc="Waterford Pricing" class="tabelbutton"/></td>
     </tr>
     <tr>
      <td>2 BHK + 2 T</td>
      <td>1074 - 1163</td>
-     <td><Modal title="Know More" desc="Waterford Pricing"/></td>
+     <td><Modal title="Know more" desc="Waterford Pricing" class="tabelbutton"/></td>
     </tr>
     <tr>
      <td>2.5 BHk + 2T</td>
      <td>1311 - 1370</td>
-     <td><Modal title="Know More" desc="Waterford Pricing"/></td>
+     <td><Modal title="Know more" desc="Waterford Pricing" class="tabelbutton"/></td>
     
     </tr>
     <tr>
      <td>3 BHK + 3T</td>
      <td>1744 - 1801</td>
-     <td><Modal title="Know More" desc="Waterford Pricing"/></td> 
+     <td><Modal title="Know more" desc="Waterford Pricing" class="tabelbutton"/></td> 
     </tr>
     
   </tbody>

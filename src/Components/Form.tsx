@@ -62,7 +62,7 @@ const Form = () => {
   </div>
   </div>
   <br/>
-  <button className="button is-primary is-light">Submit</button>
+  <button className="tabelbuttonabcde">Submit</button>
   </div>
   </form>
         
