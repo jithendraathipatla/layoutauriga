@@ -157,7 +157,6 @@ table td:not([align]), table th:not([align]) {
   border-radius: 2px;
   padding:0px;
   height:200px;
-  transform: translateY(-1px);
   cursor: pointer;
 }
 
