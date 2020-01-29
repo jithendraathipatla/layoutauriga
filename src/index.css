@@ -308,45 +308,131 @@ table td:not([align]), table th:not([align]) {
   transform: translateY(-1px);
 }
 
-.sidestickbutton{
-  writing-mode: tb-rl;
-  z-index: 9;
-  position: fixed;
-  color: #fff;
-  top: 18%;
-  width: 30px;
-  font-size: 16px;
-  font-weight: 600;
-  padding: 6px 4px;
-  letter-spacing: -0.9px;
-  border-bottom-right-radius: 10px;
-  border-top-right-radius: 10px;
-  border: 1px solid #1976d232;
-  box-shadow:0px 0px 1px 2px rgba(0, 0, 0, 0.3);
-  background:linear-gradient(to bottom, rgba(0, 89, 255, 0.699), rgba(255, 0, 255, 0.63));
-}
 .finaltouch a:hover{
   text-decoration: underline;
   color:#fff !important;
 }
 
-.sidestickbuttona{
-  writing-mode: tb-rl;
+
+.popup{
+  left: 0;
   position: fixed;
-  z-index: 9;
-  color: #fff;
+  top: 20%;
+  transition: left .5s ease;
+  z-index:1000;
+}
+
+.popupps{
+  left: 0;
+  position: fixed;
   top: 55%;
-  width: 30px;
-  font-size: 16px;
-  font-weight: 600;
-  padding: 6px 4px;
-  letter-spacing: -0.9px;
+  transition: left .5s ease;
+  z-index:1000;
+}
+
+.popup-content {
+  background: linear-gradient(to right, #9494e6, #5fd8e8);  box-sizing: border-box;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: white;
+  float: left;
+  height: 190px;
+  padding: 10px;
+  width: 275px;
+  font-size: 12px;
+  box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.3);
+}
+
+.closepopup{
+  left: -275px;
+}
+
+
+@keyframes example {
+  from {background-color: rgba(109, 109, 235);}
+  to {background-color: rgba(255, 166, 0);}
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    padding-top: 12px;
+  } 
+}
+
+
+@media (min-width: 576px){
+.modal-dialog {
+    max-width: 360px;
+    margin: 1.75rem auto;
+}
+}
+
+a:not([href]):not([tabindex]):hover {
+  color: inherit;
+  text-decoration: underline;
+}
+a.button:hover{
+  text-decoration: underline;
+}
+
+.button::after{
+    font-family: 'FontAwesome';
+    writing-mode: "tb-rl";
+    content: '\f0a9';
+    text-decoration: underline;;
+    color: white !important;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 5px;     
+}
+
+.button-closed::after{
+     font-family: 'FontAwesome';
+    content: '\f0a8';
+    color: white !important;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.buttonps{
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
-  border: 1px solid #1976d232;
-  box-shadow:0px 0px 1px 2px rgba(0, 0, 0, 0.3);
-  background:linear-gradient(to bottom,rgba(255, 0, 255, 0.63),rgba(0, 89, 255, 0.699));
+  height: 110px;
+  padding-top: 0.6rem;
+  padding-right: 2px;
+  width: 33px;
+  font-weight: 500;
+  color: #fff !important;
+  font-size: 15px;
+  line-height: 15px;
+  writing-mode: tb-rl !important;
+  animation: example 2s linear infinite;
+  box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.09);
 }
+
+
+
+
+.buttonps::after{
+  font-family: 'FontAwesome';
+  content: '\f0a9';
+  text-decoration: underline;;
+  color: white !important;
+  cursor: pointer;
+  font-size: 1.2em;
+  padding: 5px;
+  border: none;
+ }
+
+ .button-closed1::after{
+  font-family: 'FontAwesome';
+    content: '\f0a8';
+  color: white !important;
+  cursor: pointer;
+  font-size: 1em;
+  border: none;
+}
+
 
 @media screen and (min-width: 1024px)
 {
