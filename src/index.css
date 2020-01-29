@@ -349,8 +349,8 @@ table td:not([align]), table th:not([align]) {
 
 
 @keyframes example {
-  from {background-color: rgba(109, 109, 235);}
-  to {background-color: rgba(255, 166, 0);}
+  from {background-color: red;}
+  to {background-color: yellow;}
   0%, 100% {
     bottom: 0;
   }

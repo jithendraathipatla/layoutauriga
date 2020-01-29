@@ -50,7 +50,7 @@ const Sidemenu = (props:any) => {
                   <label>*Mobile</label>
                 </div>             
                 <div className="btn-group" >
-                  <button  className="tabelbuttonabcde" type="submit" name="submit">Submit</button>
+                  <button  className="tabelbuttonabcde" style={{backgroundColor:"green"}} type="submit" name="submit">Submit</button>
                 </div>
               </form> </p>
            </div>  
@@ -72,7 +72,7 @@ const Sidemenu = (props:any) => {
                   <label>*Mobile</label>
                 </div>             
                 <div className="btn-group">
-                  <button name="submit" type="submit">submit</button>
+                  <button name="submit" className="tabelbuttonabcde" style={{backgroundColor:"green"}}type="submit">submit</button>
                 </div>
               </form> 
     </div>  
