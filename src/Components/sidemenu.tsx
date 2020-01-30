@@ -1,4 +1,6 @@
 import React,{useState} from 'react';
+import axios from 'axios';
+import ReactDOM from 'react-dom';
 
 
 
@@ -61,8 +63,25 @@ const Sidemenu = (props:any) => {
         phonenumber:phoneone,
         PropertyName:"Concorde Auriga",
       }];
-      console.log(finalformdata);
+      var data = {
+        service_id: 'gmail',
+        template_id: 'normal',
+        user_id: 'user_s9VasukllOwTDnR8R0FWD',
+        template_params: finalformdata
     }
+  
+    axios.post('https://api.emailjs.com/api/v1.0/email/send',  data )
+    .then(res => {
+      console.log(res);
+      console.log(res.data); 
+      let abcd:any = document.getElementById("root")?.style;
+      abcd.display="none";
+      let display = <h1>We received your details and we will contact you shortly</h1>;
+      ReactDOM.render(display,document.getElementById("root1"));
+    })
+    }
+
+
 
 
     const secondform = (e:any) => {
@@ -73,7 +92,22 @@ const Sidemenu = (props:any) => {
         phonenumber:phonetwo,
         PropertyName:"Concorde Auriga",
       }];
-      console.log(finalformdata);
+      var data = {
+        service_id: 'gmail',
+        template_id: 'normal',
+        user_id: 'user_s9VasukllOwTDnR8R0FWD',
+        template_params: finalformdata
+    }
+  
+    axios.post('https://api.emailjs.com/api/v1.0/email/send',  data )
+    .then(res => {
+      console.log(res);
+      console.log(res.data);
+      let abcd:any = document.getElementById("root")?.style;
+      abcd.display="none";
+      let display = <h1>We received your details and we will contact you shortly</h1>;
+      ReactDOM.render(display,document.getElementById("root1"));
+    })
     }
 
     return (

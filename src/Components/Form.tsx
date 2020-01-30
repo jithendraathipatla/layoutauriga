@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
+import ReactDOM from 'react-dom';
 import Logo from '../Images/logo.png';
 import axios from 'axios';
-const API_PATH = '../Components/index.php';
 
 
 const Form = () => {
@@ -27,14 +27,23 @@ const Form = () => {
       Client_email:client_email,
       Client_phone_number: phonenumber,
       Project_Name:"Concored Auriga",
-      mailSent: false,
-      error: null
     }
-    
-axios.post(API_PATH, finalData).then(function(response) {
-  console.log(response);
+    var data = {
+      service_id: 'gmail',
+      template_id: 'normal',
+      user_id: 'user_s9VasukllOwTDnR8R0FWD',
+      template_params: finalData
+  }
 
-});
+  axios.post('https://api.emailjs.com/api/v1.0/email/send',  data )
+  .then(res => {
+    let abcd:any = document.getElementById("root")?.style;
+    abcd.display="none";
+    let display = <h1>We received your details and we will contact you shortly</h1>;
+    ReactDOM.render(display,document.getElementById("root1"));
+   
+  })
+          
   }
 
     return (
