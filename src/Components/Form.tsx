@@ -1,11 +1,14 @@
 import React, {useState} from 'react';
 import Logo from '../Images/logo.png';
+import axios from 'axios';
+const API_PATH = '../Components/index.php';
 
 
 const Form = () => {
   const [name, setname] = useState();
   const [email, setemail] = useState();
   const [phone, setphone] = useState();
+  const [finalData, setfinalData] = useState(null);
 
  
   const handelingFormdata = (e:any) => {
@@ -24,14 +27,18 @@ const Form = () => {
       Client_email:client_email,
       Client_phone_number: phonenumber,
       Project_Name:"Concored Auriga",
+      mailSent: false,
+      error: null
     }
-    console.log(finalData);
+    
+axios.post(API_PATH, finalData).then(function(response) {
+  console.log(response);
+
+});
   }
 
-
-
     return (
-      <form onSubmit={handelingFormdata} name="main_forma" action="/index.php" method="post">
+      <form onSubmit={handelingFormdata} name="main_forma" method="post">
           <div style={{textAlign:"center"}}>
             <img src={Logo} alt="concorde auriga" width="150px"/>
           </div>
