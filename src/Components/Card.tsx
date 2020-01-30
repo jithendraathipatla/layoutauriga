@@ -27,6 +27,9 @@ const classes = useStyles();
     <Paper elevation={3}>
       <div className="content" style={{textAlign:"center", padding:"40px 0px"}}>
         <h1 style={{fontSize:"20px"}}>{props.BHK}</h1>
+        <div style={{padding:"10px 0px 0px 0px", color:"red"}}>
+        {props.pricing}
+        </div>
         <br/>
          <Modal title="Know More" desc="Waterford Pricing" class="tabelbuttonabcd"/>
       </div>

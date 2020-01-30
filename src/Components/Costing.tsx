@@ -9,10 +9,10 @@ const Costing = () => {
                 <Title title="Auriga Pricing"/>
             </div>
             <div className="pricing">
-            <CardComponent BHK="1.5 BHK"/>
-            <CardComponent BHK="2 BHK"/>
-            <CardComponent BHK="2.5 BHK"/>
-            <CardComponent BHK="3 BHK"/>
+            <CardComponent BHK="1.5 BHK" pricing="Starting 45 Lakh*"/>
+            <CardComponent BHK="2 BHK" pricing="Starting 56 Lakh*"/>
+            <CardComponent BHK="2.5 BHK" pricing="Starting 67 Lakh*"/>
+            <CardComponent BHK="3 BHK" pricing="Starting 86 Lakh*"/>
             </div>
         </div>
     );

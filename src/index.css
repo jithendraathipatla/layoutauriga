@@ -177,8 +177,12 @@ table td:not([align]), table th:not([align]) {
   grid-template-columns: 8fr 4fr;
 }
 
-.main_Form{
-  padding:0px 10px 30px 30px;
+.main_Form {
+  padding: 0px 20px 20px 20px;
+  background: linear-gradient(45deg, #3d00d159, #3298dc);
+  border-radius: 2px;
+  margin-left: 30px;
+  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
 }
 
 .label{
@@ -253,6 +257,8 @@ table td:not([align]), table th:not([align]) {
   position: relative;
 }
 
+
+
 .tabelbutton{
   padding: 4px;
   border:1px solid #1976d2;
@@ -266,7 +272,7 @@ table td:not([align]), table th:not([align]) {
 }
 
 .tabelbuttonabcd{
-  padding: 6px 10px;
+  padding: 3px 8px 6px 8px;
   border:1px solid #1976d2;
   background-color: #1976d2;
   box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.1);
@@ -562,6 +568,7 @@ a.button:hover{
 }
 .main_Form {
   padding: 10px;
+  
 }
 
 .styles_modal__gNwvD {

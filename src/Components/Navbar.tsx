@@ -29,7 +29,7 @@ const [state, setstate] = useState(false);
              <li onClick={closingNav}><Link to="/overview">Overview</Link></li>
              <li onClick={closingNav}><Link to="/configuration">Configuration</Link></li>
              <li onClick={closingNav}><Link to="/gallery">Gallery</Link></li>
-             <li onClick={closingNav}><Link to="/costing">Costing</Link></li>
+             <li onClick={closingNav}><Link to="/costing">Pricing</Link></li>
              <li onClick={closingNav}><a href="../Pages/amenities.html">Amenities</a></li>
              <li onClick={closingNav}><Link to="/location">Location</Link></li>
             </ul>   
