@@ -7,26 +7,29 @@ const Form = () => {
   const [email, setemail] = useState();
   const [phone, setphone] = useState();
 
-  const handelnameChange = (e:any) => {
-    const name = e.target.value;
-    setname(name);
-  }
-
-  const handelemailChange = (e:any) => {
-    const email = e.target.value;
-    setemail(email);
-  }
-
-  const handelphoneChange = (e:any) => {
-    const phone = e.target.value;
-    setphone(phone);
-  }
+ 
   const handelingFormdata = (e:any) => {
     e.preventDefault();
-    if(phone.length > 10){
+    let client_name = e.target.elements.name.value;
+    let client_email = e.target.elements.email.value;
+    let phonenumber = e.target.elements.phone.value;
+    
+
+    if(phonenumber.length > 10){
       alert('Must enter a Valid Number');
     }
+    
+    const finalData = {
+      Client_name:client_name,
+      Client_email:client_email,
+      Client_phone_number: phonenumber,
+      Project_Name:"Concored Auriga",
+    }
+    console.log(finalData);
   }
+
+
+
     return (
       <form onSubmit={handelingFormdata} name="main_forma" action="/index.php" method="post">
           <div style={{textAlign:"center"}}>
@@ -37,7 +40,7 @@ const Form = () => {
   <div className="field">
   <label className="label">Name</label>
   <div className="control">
-    <input className="input" type="text" name="name" required value={name} onChange={handelnameChange} placeholder="e.g Alex Smith" />
+    <input className="input" type="text" name="name" required value={name}  placeholder="e.g Alex Smith" />
   </div>
   </div>
   
@@ -45,14 +48,14 @@ const Form = () => {
   <div className="field">
   <label className="label">Email</label>
   <div className="control">
-    <input className="input" type="email" name="email" required value={email} onChange={handelemailChange} placeholder="e.g. alexsmith@gmail.com"/>
+    <input className="input" type="email" name="email" required value={email}  placeholder="e.g. alexsmith@gmail.com"/>
   </div>
   </div>
 
   <div className="field">
   <label className="label">Phone Number</label>
   <div className="control">
-    <input className="input" type="number" name="phone" required maxLength={10} value={phone} onChange={handelphoneChange} placeholder="e.g. 999999999"/>
+    <input className="input" type="number" name="phone" required maxLength={10} value={phone}  placeholder="e.g. 999999999"/>
   </div>
   </div>
   <br/>

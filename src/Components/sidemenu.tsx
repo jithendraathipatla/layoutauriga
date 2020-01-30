@@ -5,9 +5,11 @@ import React,{useState} from 'react';
 const Sidemenu = (props:any) => {
     const [state,setstate] = useState("popup closepopup");
     const [nextstep, setnextstep] = useState("buttonps");
-    
     const [costone, setcostone] = useState("popupps closepopup");
     const [costtwo, setcosttwo] = useState("buttonps");
+   
+    const [phoneone, setphoneone] = useState(0);
+    const [phonetwo, setphonetwo] = useState(0);
 
     const handelPopUp = () => {
         {state === "popup closepopup" ? setstate("popup") : setstate("popup closepopup")}
@@ -33,26 +35,67 @@ const Sidemenu = (props:any) => {
         }
     }
 
+    const restrictingone = (e:any) => {
+        let value = e.target.value;
+        if(value.length > 10) {
+         alert("You are not allowed to enter Fake Numbers");
+         setphoneone(0);
+        }
+        setphoneone(value);
+    }
+
+    const restricingSecond = (e:any) => {
+      let valueone = e.target.value;
+      if(valueone.length > 10) {
+       alert("You are not allowed to enter more than 10 digits");
+       setphonetwo(0);
+      }
+      setphonetwo(valueone);
+    }
+
+    const firstForm = (e:any) =>{
+      e.preventDefault();
+      let vaueone = e.target.elements.email.value;
+      let finalformdata = [{
+        name:vaueone,
+        phonenumber:phoneone,
+        PropertyName:"Concorde Auriga",
+      }];
+      console.log(finalformdata);
+    }
+
+
+    const secondform = (e:any) => {
+      e.preventDefault();
+      let vaueone = e.target.elements.email.value;
+      let finalformdata = [{
+        name:vaueone,
+        phonenumber:phonetwo,
+        PropertyName:"Concorde Auriga",
+      }];
+      console.log(finalformdata);
+    }
+
     return (
     <div>
     <div className={state} style={{marginTop:`${props.height}`}}>
     <div className="popup-content">
       <h1 style={{color:"black", textDecoration:"underline", paddingBottom:"7px"}} className="label">Fill Form to Download Brouchure</h1>
     
-      <p><form action="/popup.php" name="brouchereform"  method="POST" id="frmdb">
+      <form name="brouchereform"  onSubmit={firstForm} method="POST" id="frmdb">
              <div id="sucess1"></div>               
                 <div className="inputGroup2">
-                  <input className="input" style={{height:"30px", fontSize:"15px", padding:"10px 6px"}} placeholder="Your emailId" type="email" name="email" id="email1"/><br/>
+                  <input className="input" style={{height:"30px", fontSize:"15px", padding:"10px 6px"}}  required placeholder="Your emailId" type="email" name="email" id="email1"/><br/>
                   <label >*Email</label>
                 </div>
                 <div className="inputGroup2">
-                  <input className="input" style={{height:"30px", fontSize:"15px", padding:"10px 6px"}} type="number" placeholder="Your Phone Number" required name="mobile" id="mobile1"/><br/>
+                  <input className="input" style={{height:"30px", fontSize:"15px", padding:"10px 6px"}} onChange={restrictingone}  required type="number" placeholder="Your Phone Number" name="mobile" id="mobile1"/><br/>
                   <label>*Mobile</label>
                 </div>             
                 <div className="btn-group" >
                   <button  className="tabelbuttonabcde" style={{backgroundColor:"green", height:"32px", padding:"0px 10px 3px", marginTop:"10px"}} type="submit" name="submit">Submit</button>
                 </div>
-              </form> </p>
+              </form>
            </div>  
 <a  className={nextstep} onClick={handelPopUp}>Download Brouchure</a>
   </div>
@@ -61,14 +104,14 @@ const Sidemenu = (props:any) => {
     <div className="popup-content" style={{height:"186px"}}>
     <h1 style={{color:"black", textDecoration:"underline", paddingBottom:"7px"}} className="label">Fill Form to Download cost sheet</h1>
     
-     <form action="./popup.php"  method="POST" className="callRequest" id="frmps">
+     <form action="./popup.php"  method="POST" className="callRequest" id="frmps" onSubmit={secondform}>
              <div id="sucess2"></div>      
                 <div className="inputGroup2">
-                  <input className="input" style={{height:"30px", fontSize:"15px", padding:"10px  6px"}} type="email" placeholder="Your Emailid" name="email" id="email2"/><br/>
+                  <input className="input" style={{height:"30px", fontSize:"15px", padding:"10px  6px"}} required type="email" placeholder="Your Emailid" name="email" id="email2"/><br/>
                   <label>*Email</label>
                 </div>
                 <div className="inputGroup2">
-                  <input className="input" style={{height:"30px", fontSize:"15px", padding:"10px 6px"}}  type="number" required placeholder="Your Number" name="mobile" id="mobile2"/><br/>
+                  <input className="input" style={{height:"30px", fontSize:"15px", padding:"10px 6px"}} onChange={restricingSecond}  type="number" required placeholder="Your Number" name="mobile" id="mobile2"/><br/>
                   <label>*Mobile</label>
                 </div>          
                 
