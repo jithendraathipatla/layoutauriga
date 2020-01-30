@@ -250,7 +250,7 @@ table td:not([align]), table th:not([align]) {
 
 
 .show-nav {
-  height: 270px;
+  height: 313px;
 }
 
 .criticalcss img{
@@ -460,7 +460,7 @@ a.button:hover{
   .nav-links {
     height: auto;
     display: flex;
-    margin-left: 15rem;
+    margin-left: 5rem;
   }
   .nav-links a {
     margin: 0 1.3rem;
@@ -468,11 +468,20 @@ a.button:hover{
   }
 }
 
+.cardabcd{
+  text-align: justify;
+  padding: 30px;
+}
+
 @media all and (max-width:600px){
   .overview_main {
     grid-template-columns: 12fr;
     grid-gap: 0px 10px;
     margin-left: 20px;
+}
+
+.cardabcd{
+  padding: 10px;
 }
 
 .MuiBox-root-98 {
@@ -568,6 +577,7 @@ a.button:hover{
 }
 .main_Form {
   padding: 10px;
+  margin-left: 0px;
   
 }
 

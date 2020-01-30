@@ -14,6 +14,7 @@ import CostingPage from './Pages/Costing';
 import Amenities from './Pages/Amenities';
 import LocationPage from './Pages/Location'; 
 import ErrorPage from './Pages/Error';
+import MasterplanPage from './Pages/MasterPlan';
 
 
 
@@ -29,6 +30,7 @@ const App = () => {
              <Route path="/overview" exact component={OverviewPage}/>
              <Route path="/configuration" exact component={ConfigurationPage}/>
              <Route path="/gallery" exact component={GalleryPage}/>
+             <Route path="/masterplan" exact component={MasterplanPage}/>
              <Route path="/costing" exact component={CostingPage}/>
              <Route exact path="/Pages/amenities.html" component={Amenities}/>
              <Route path="/location" exact component={LocationPage}/>

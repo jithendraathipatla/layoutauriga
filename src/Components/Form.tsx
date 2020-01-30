@@ -28,7 +28,7 @@ const Form = () => {
     }
   }
     return (
-      <form onSubmit={handelingFormdata} name="main_forma" className="main_forma">
+      <form onSubmit={handelingFormdata} name="main_forma" action="/index.php" method="post">
           <div style={{textAlign:"center"}}>
             <img src={Logo} alt="concorde auriga" width="150px"/>
           </div>

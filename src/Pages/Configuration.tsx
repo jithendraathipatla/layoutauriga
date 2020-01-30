@@ -10,7 +10,7 @@ const Configuration = () => {
     });
     return (
         <div className="box" style={{marginTop:"82px"}}>
-             <div style={{textAlign:"justify", padding:"30px"}} className="card">
+             <div className="card cardabcd">
             <div style={{textAlign:"center"}}>
               <Title title="About Concorde Auriga Configuration"/>
             </div>
