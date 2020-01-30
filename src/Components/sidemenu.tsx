@@ -61,7 +61,7 @@ const Sidemenu = (props:any) => {
     <div className="popup-content" style={{height:"186px"}}>
     <h1 style={{color:"black", textDecoration:"underline", paddingBottom:"7px"}} className="label">Fill Form to Download cost sheet</h1>
     
-     <form action="/popup.php"  method="POST" className="callRequest" id="frmps">
+     <form action="./popup.php"  method="POST" className="callRequest" id="frmps">
              <div id="sucess2"></div>      
                 <div className="inputGroup2">
                   <input className="input" style={{height:"30px", fontSize:"15px", padding:"10px  6px"}} type="email" placeholder="Your Emailid" name="email" id="email2"/><br/>
