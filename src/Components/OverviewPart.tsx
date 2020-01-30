@@ -33,7 +33,7 @@ const OverviewPart = () => {
     },
     {
         main_title:"Total Towers",
-        sub_heading:"2 Blocks",
+        sub_heading:"3 Blocks",
         image:TotalTowers,
     },
     {
