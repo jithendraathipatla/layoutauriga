@@ -460,11 +460,11 @@ a.button:hover{
   .nav-links {
     height: auto;
     display: flex;
-    margin-left: 10rem;
+    margin-left: 9rem;
   }
   .nav-links a {
     margin: 0 1rem;
-    padding: 20px 0;
+    padding: 23px 0;
   }
 }
 
