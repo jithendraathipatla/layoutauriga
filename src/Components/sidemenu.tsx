@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import axios from 'axios';
 import ReactDOM from 'react-dom';
+import LastScreen from './Finalscreen';
 
 
 
@@ -76,8 +77,7 @@ const Sidemenu = (props:any) => {
       console.log(res.data); 
       let abcd:any = document.getElementById("root")?.style;
       abcd.display="none";
-      let display = <h1>We received your details and we will contact you shortly</h1>;
-      ReactDOM.render(display,document.getElementById("root1"));
+      ReactDOM.render(<LastScreen/>,document.getElementById("root1"));
     })
     }
 
@@ -105,8 +105,7 @@ const Sidemenu = (props:any) => {
       console.log(res.data);
       let abcd:any = document.getElementById("root")?.style;
       abcd.display="none";
-      let display = <h1>We received your details and we will contact you shortly</h1>;
-      ReactDOM.render(display,document.getElementById("root1"));
+      ReactDOM.render(<LastScreen/>,document.getElementById("root1"));
     })
     }
 
