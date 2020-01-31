@@ -460,7 +460,7 @@ a.button:hover{
   .nav-links {
     height: auto;
     display: flex;
-    margin-left: 8rem;
+    margin-left: 10rem;
   }
   .nav-links a {
     margin: 0 1rem;
