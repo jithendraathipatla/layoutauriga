@@ -59,25 +59,27 @@ const Sidemenu = (props:any) => {
     const firstForm = (e:any) =>{
       e.preventDefault();
       let vaueone = e.target.elements.email.value;
-      let finalformdata = [{
+      let finalformdata = {
         name:vaueone,
         phonenumber:phoneone,
         PropertyName:"Concorde Auriga",
-      }];
+      }
       var data = {
         service_id: 'gmail',
         template_id: 'normal',
         user_id: 'user_s9VasukllOwTDnR8R0FWD',
         template_params: finalformdata
-    }
+      }
   
-    axios.post('https://api.emailjs.com/api/v1.0/email/send',  data )
+     axios.post('https://api.emailjs.com/api/v1.0/email/send',  data )
     .then(res => {
       console.log(res);
       console.log(res.data); 
       let abcd:any = document.getElementById("root")?.style;
       abcd.display="none";
       ReactDOM.render(<LastScreen/>,document.getElementById("root1"));
+    }).catch((e)=>{
+      console.log(e);
     })
     }
 
@@ -87,11 +89,11 @@ const Sidemenu = (props:any) => {
     const secondform = (e:any) => {
       e.preventDefault();
       let vaueone = e.target.elements.email.value;
-      let finalformdata = [{
+      let finalformdata = {
         name:vaueone,
         phonenumber:phonetwo,
         PropertyName:"Concorde Auriga",
-      }];
+      };
       var data = {
         service_id: 'gmail',
         template_id: 'normal',
